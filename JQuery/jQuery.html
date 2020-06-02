@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='enter'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"            
+            );
+            $( "p" ).hide( "fast" );
+            $( "p" ).show( "slow");
+            $("#2").css({"color":"red"})
+            $("#3").click(function() {
+                $('h1').hide();
+                $("h1" ).show( "slow");
+                $( document ).ready(function(){
+ 
+
+            $( "button.alert" ).on( "click", function() {
+                console.log( "A button with the alert class was clicked!" );
+            });
+
+            $( "<button class='alert'>Alert!</button>" ).appendTo( document.body );
+            });
+            });
+        });
+    
+
+    </script>
+    
+</body>
+
+</html>
